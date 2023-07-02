@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="nodetest.css" type="text/css" />
- 
+    <link rel="stylesheet" href="/css/nodetest.css" type="text/css" />
+    <script>
+        // Generated JavaScript code within the EJS template
+        window.onload = function() {
+          var ham = document.getElementById("test");
+          
+          ham.addEventListener("click", function() {
+            document.getElementById("test2").style.backgroundColor = "green";
+          });
+        };
+      </script>
 </head>
 <body>
-<h1> <%= title %></h1>
-<diV>Success</diV>
+<div> <%= title %></div>
+<button id="test">Successes</button>
+<div id="test2">TEST2</div>
 </body>
 <script src="nodetest.js"></script>
+<script src="front.js"></script>
 
-</html>
+
+</html> 

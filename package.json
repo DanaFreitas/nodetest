@@ -4,7 +4,7 @@
   "description": "",
   "main": "nodetest.js",
   "scripts": {
-    "devStart": "nodemon nodetest.js"
+  "start" : "nodemon views/nodetest.js"
   },
   "keywords": [],
   "author": "",
@@ -17,3 +17,4 @@
     "nodemon": "^2.0.22"
   }
 }
+

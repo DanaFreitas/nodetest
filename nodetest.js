@@ -8,18 +8,20 @@
   app.set('view engine', 'ejs')
 
    app.get('/', (req, res) => {
-       res.send('Successful response.');
-       res.render('home', {title: "monkey" });
-       console.log(title)
+       res.render('home', {title: "anime" });
   });
 
 //  app.get('/monkey', (req, res) => {
 //   res.send('Successful monkey.');
 // console.log("TELEPORT SUCCESSFUL")
 // });
-
 app.use('/',router)
-  app.listen(port, ()=> console.log(`Dolphin app listening on port ${port}!`))
+
+app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
+
+
+app.listen(port, ()=> console.log(`Dolphin app listening on port ${port}!`))
 
 
 
@@ -28,6 +30,5 @@ let ham = document.getElementById("test")
 
 ham.addEventListener("click", () => {
     document.getElementById("test2").style.backgroundColor = "green";
-console.log("It works")  
 });
   */
