@@ -4,12 +4,14 @@
   "description": "",
   "main": "nodetest.js",
   "scripts": {
-  "start" : "nodemon views/nodetest.js"
+    "start": "nodemon views/nodetest.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2"
   },
@@ -17,4 +19,3 @@
     "nodemon": "^2.0.22"
   }
 }
-
